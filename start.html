@@ -3,14 +3,14 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width">
-<title>Ubuntu Start Page</title>
+<title>Start Page</title>
 <style type="text/css">
 html {
-    font: normal 300 16px/25px "Ubuntu", Arial, "libra sans", sans-serif;
+    font-family:arial;
     color: #333;
 }
 body {
-    background: white;
+    background: #080808;
     margin: 0 auto;
 }
 button::-moz-focus-inner {
@@ -44,6 +44,8 @@ input[type="search"] {
   -ms-transition: 0.3s linear border;
   -o-transition: 0.3s linear border;
   transition: 0.3s linear border;
+  background:#080808;
+  color:#ccc;
 }
 input[type="search"]:focus {
   outline: 0;
@@ -112,20 +114,20 @@ ul li {
 .logo {
     margin: 0 0 15px 0;
 }
-.logo a {
+/*.logo a {
     font-size: 1px;
     display: block;
     text-indent: -9999px;
-    background: url(http://start.ubuntu.com/12.04/sprite.png) no-repeat;
+    background: url(https://www.gnu.org/software/gnuzilla/icecat.png) no-repeat;
     background-position: -10px -310px;
     padding: 0;
-    height: 38px;
-    width: 109px;
     position: relative;
     -webkit-transition: margin 200ms ease;
     -moz-transition: margin 200ms ease;
     transition: margin 200ms ease;
-}
+    height:50px;
+    width:50px;
+}*/
 .logo,
 .search-form {
     max-width: 460px;
@@ -196,89 +198,17 @@ ul li {
     position: relative;
     top: 8px;
 }
-.external-links {
-    margin: 1em;
-}
-.external-links li {
-    text-align: left;
-    display: block;
-    margin: 0 1em 1em 1em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #ccc;
-}
-.external-links li:after {
-    margin: 0;
-}
-.external-links a {
-    display: block;
-    text-decoration: none;
-    color: gray;
-    height: 30px;
-    line-height: 30px;
-    padding-left: 35px;
-}
-.external-links a::after {
-    content: " ›";
-}
-.external-links a:hover {
-    color: #e24912;
-}
-@media screen and (min-width: 665px) {
-    .external-links {
-        width: 595px;
-        margin: auto;
-        display: block;
-        text-align: center;
-    }
-    .external-links li {
-        display: inline-block;
-        margin: 0 1em 0 0;
-        padding: 0;
-        border: none;
-    }
-    .external-links li:last-child {
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-    .external-links li a {
-        display: inline-block;
-    }
-}
-.help-link a,
-.shop-link a,
-.community-link a {
-    background: url(http://start.ubuntu.com/12.04/sprite.png) no-repeat;
-}
-.help-link a {
-    background-position: -10px -450px;
-}
-.help-link:hover a {
-    background-position: -10px -490px;
-}
-.shop-link a {
-    background-position: -10px -368px;
-}
-.shop-link:hover a {
-    background-position: -10px -410px;
-}
-.community-link a {
-    background-position: -10px -528px;
-}
-.community-link:hover a {
-    background-position: -10px -568px;
+.logo{
+    margin-top:125px;
+    margin-bottom:30px;
 }
 </style>
 </head>
 <body>
 
-    <div class="wrapper">
-
-        <div class="search-box one-box one-box-bordered">
-
-            <div class="ubuntu-branding"></div>
-
-            <h1 class="logo"><a href="http://www.google.com">Google</a></h1>
-
+<div align="center">
+            <img class="logo"    src="https://www.gnu.org/software/gnuzilla/icecat.png"  style="width:200px;height:200px;">
+</div>
             <form method="get" class="search-form" action="http://www.google.com/search" name="search">
                 <input type="search" class="search-input" name="q" value="" x-webkit-speech id="sbi" /><!-- eliminate whitespace
                 --><button id="sbtn" class="search-button" type="submit"><span id="sspan"></span><span class="acchide">Search</span></button>
@@ -293,11 +223,6 @@ ul li {
 
     </div><!-- close wrapper -->
 
-    <ul class="external-links one-list-inline">
-        <li class="help-link"><a href="https://help.ubuntu.com">Ubuntu help</a></li>
-        <li class="shop-link"><a href="http://shop.ubuntu.com">Ubuntu shop</a></li>
-        <li class="community-link"><a href="http://www.ubuntu.com/community">Ubuntu community</a></li>
-    </ul>
 
 <script type="text/javascript">
 //<![CDATA[
