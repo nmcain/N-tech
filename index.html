@@ -137,3 +137,93 @@ div.post{
 </html>
 
  -->
+
+<div align="center">
+<div class="input">
+    <div align="left">
+        <div class="ext">
+            Sign In
+        </div><form name="loginform" onSubmit="return validateForm();" action="main.html" method="post">
+         <input type="text" name="usr" placeholder="Username" class="user"> 
+          <input type="password" name="pword" placeholder="Password" class="pass">
+          <input type="submit" class="button" value="Login" onSubmit="validateForm();" />
+          </form>
+         </div>
+         
+         <p class="copy">&copy 2017 N-TECH Corporation</p>
+         </div>
+    </div>
+
+   
+
+<style>
+.copy{
+    font-size:10px;
+    margin-top:50px;
+}
+.button{
+    width:50px;
+    height:25px;
+    background:#FB8C00;
+    border:0px solid black;
+    margin:30px;
+    border-radius:2px;
+}
+.button:hover{
+    width:50px;
+    height:25px;
+    background:#FF9800;
+    border:0px solid black;
+    margin:30px;
+}
+    body{
+        background:url("https://docs.google.com/drawings/d/e/2PACX-1vRVuZGlWkTXrLV93TcTxLpqmXJJTuXm-LD9ys-Ekf8EMVBzLNZRk5g4nxU7gih7Z4bI3CTzeL_c2lbk/pub?w=1366&amp;h=768");
+        font-family: 'Roboto', sans-serif;
+    }
+    .input{
+        background:#333333;
+        height:380px;
+        width:280px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .ext{
+      /*  background:url("https://docs.google.com/drawings/d/e/2PACX-1vQrYE3LjZVi80VuMcCrB3GJoRJxZf3FMiaqUqQ1gTCTSkkUgTxmzD8YnA3DBr7S4EbCNhPcHccNWA_b/pub?w=100&h=70");*/
+        height:70;
+        width:100;
+        color:white;
+        font-size:30px;
+       padding:30px;
+    }
+    .user{
+        background:#444444;
+        border:1px solid #444444;
+        margin-left:30px;
+        color:#666666;
+    }
+      .pass{
+        background:#444444;
+        border:1px solid #444444;
+        margin:30px;
+        color:#666666;
+    }
+</style>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<script>
+    function validateForm() {
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        var username = "nmcain"; 
+        var password = "619507";
+        
+          var username2 = "denver"; 
+        var ps2 = "denver";
+        
+        if ((un == username or username2) && (pw == password or ps2)) {
+            return true;
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+            return false;
+        }
+  }
+</script>
