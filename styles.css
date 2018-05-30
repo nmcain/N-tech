@@ -486,6 +486,9 @@ body .demo-blog {
 .social-btn__imgur {
   background-image: url('images/im.svg');
 }
+.social-btn__youtube {
+  background-image: url('images/yt.svg');
+}
 .social-btn__share {
   color: rgba(0, 0, 0, 0.54);
   background: transparent;
