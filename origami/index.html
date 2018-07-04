@@ -32,15 +32,6 @@ body {
   padding: 16px;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
     .title{
        font-family: 'Roboto', sans-serif;
         font-size:45px;
@@ -57,8 +48,38 @@ box-shadow: 0px 0px 19px 0px rgba(102,102,102,0.81);
     }
 </style>
 
-
-<div class="top-container">
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Origami</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">About</a>
+        <a class="mdl-navigation__link" href="">Features</a>
+        <a class="mdl-navigation__link" href="">Timeline</a>
+        <a class="mdl-navigation__link" href="">Download</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Origami</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">About</a>
+      <a class="mdl-navigation__link" href="">Features</a>
+      <a class="mdl-navigation__link" href="">Timeline</a>
+      <a class="mdl-navigation__link" href="">Download</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      
+      
+      
+      <div class="top-container">
   <p class="title">Origami</p>
   <p>The best tool for developing Web Apps on every platform</p>
    <div align="center"><button class="btdl mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
@@ -66,59 +87,12 @@ box-shadow: 0px 0px 19px 0px rgba(102,102,102,0.81);
 </button></div>
     <img src="images/screenshot.png" width"50%" alt="screenshot" class="screenshot">
 </div>
-
-<div class="header" id="myHeader">
-  <div class="mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--scroll">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Title</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content"><!-- Your content goes here --></div>
+      
+      
+      
+      
+      </div>
   </main>
 </div>
-</div>
-
-<div class="content">
-
-</div>
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-    
-    
-    
 </body>
     </html>
