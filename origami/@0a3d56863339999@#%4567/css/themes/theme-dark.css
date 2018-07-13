@@ -1,0 +1,85 @@
+.controls{
+background:#37474f;
+}
+.toolbar{
+background:#455a64;
+border-bottom:1px solid #455a64;
+}
+.idbt{
+    border:none;
+    background:#546e7a;
+}
+.idbt:hover{
+    border:none;
+    background:#37474f;
+}
+.idbt:active{
+    border:none;
+    background:#546e7a;
+}
+.tab {
+ border-right:1px solid #546e7a;
+    background-color: #37474f;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: transparent;
+    color: black;
+}
+.tab button:hover {
+    background-color: #455a64;
+}
+.tab button.active {
+    background-color: #546e7a;
+    border-radius:0px 15px 15px 0px;
+}
+.tabcontent {
+    border-right:1px solid #546e7a;
+}
+body {
+    background:#37474f;
+}
+#title-bar {
+ background-color: #263238;
+}
+#title {
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+}
+#title-bar-btns {
+    color:#ffffff;
+}
+.btn{ 
+    background:transparent;
+}
+.btn:hover{
+    background:#37474f;
+}
+.dropdown:hover .dropbtn {background-color: #263238;}
+.dropdown2:hover .dropbtn2 {background-color: #263238;}
+.dropdown3:hover .dropbtn3 {background-color: #263238;}
+.dropdown4:hover .dropbtn4 {background-color: #263238;}
+.dropdown5:hover .dropbtn5 {background-color: #263238;}
+.dropdown6:hover .dropbtn6 {background-color: #263238;}
+.home{
+    color:#222222;
+}
+.settings{
+    color:#263238;
+}
+.undo{
+    color:#eeeeee;
+}
+.redo{
+    color:#eeeeee;
+}
+.build{
+    color:#ab47bc;
+}
+.devices{
+    color:#263238;
+}
+.lock{
+    color:#263238;
+}
