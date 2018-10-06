@@ -1,3 +1,3 @@
 var origamiExternal = {
-    latest:"0.0 Alpha",
+    latest:"1.0 Release",
 }
