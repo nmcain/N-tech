@@ -1,0 +1,1 @@
+Using domain server: Name: resolver1.opendns.com Address: 208.67.222.222#53 Aliases: myip.opendns.com has address 138.229.146.211
